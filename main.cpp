@@ -5,14 +5,8 @@
 // The reason we have two files, header and cpp is to reduce compile times,
 using namespace std;
 int main() {
-    Rectangle rectangle;
-    rectangle.setWidth(20);
-
-    TextBox textBox;
-
-    textBox.setValue("Paul");
-    cout << rectangle.getArea() << endl;
-    cout << textBox.getValue();
+    Rectangle rectangle{-10, 20};
+    cout << rectangle.getWidth();
 
     return 0;
 }

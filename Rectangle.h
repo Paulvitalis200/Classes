@@ -8,19 +8,16 @@
 
 class Rectangle {
 public:
+    Rectangle(int width, int height);
     void draw();
     int getArea();
-    // Getter (accessor)
     int getWidth();
-    // Setter (mutator)
     void setWidth(int width);
+    int getHeight() const;
+    void setHeight(int height);
 private:
     int width;
     int height;
-
-public:
-    int getHeight() const;
-    void set_height(int height);
 };
 
 
