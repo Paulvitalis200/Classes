@@ -11,8 +11,7 @@ void showPerson(Person person) {
 }
 
 int main() {
-    Person person{20};
-    showPerson(20);
+    Rectangle rectangle{10, 20, "blue"};
 
     return 0;
 }

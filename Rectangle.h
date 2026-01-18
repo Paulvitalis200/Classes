@@ -5,11 +5,15 @@
 #ifndef CLASSES_RECTANGLE_H
 #define CLASSES_RECTANGLE_H
 
+#include <string>
+
+using namespace std;
 
 class Rectangle {
 public:
     Rectangle() = default;
     Rectangle(int width, int height);
+    Rectangle(int width, int height, const string& color);
     void draw();
     int getArea();
     int getWidth();
@@ -19,6 +23,7 @@ public:
 private:
     int width;
     int height;
+    string color;
 };
 
 
