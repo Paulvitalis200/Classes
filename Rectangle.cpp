@@ -7,10 +7,8 @@
 
 using namespace std;
 
-Rectangle::Rectangle(int width, int height) {
-    cout << "Constructing a Rectangle" << endl;
-    setWidth(width);
-    setHeight(height);
+Rectangle::Rectangle(int width, int height) : width{width}, height{height} {
+// Not the best way since we lose our validation logic
 }
 
 void Rectangle::draw() {
