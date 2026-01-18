@@ -4,6 +4,10 @@
 
 #include "TextBox.h"
 
+TextBox::TextBox(const string &value) : value{value} {
+
+}
+
 string TextBox::getValue() {
     return value;
 }

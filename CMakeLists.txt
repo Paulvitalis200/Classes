@@ -7,4 +7,6 @@ add_executable(Classes main.cpp
         Rectangle.cpp
         Rectangle.h
         TextBox.cpp
-        TextBox.h)
+        TextBox.h
+        Person.cpp
+        Person.h)
