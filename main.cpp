@@ -1,19 +1,18 @@
 #include <iostream>
 #include "Rectangle.h"
+#include "TextBox.h"
 
 // The reason we have two files, header and cpp is to reduce compile times,
 using namespace std;
 int main() {
     Rectangle rectangle;
-    Rectangle first;
-    Rectangle second;
+    rectangle.setWidth(20);
 
-    cout << &first << endl;
-    cout << &second << endl;
-    rectangle.width = 10;
-    rectangle.height = 20;
+    TextBox textBox;
 
-    cout << rectangle.getArea();
+    textBox.setValue("Paul");
+    cout << rectangle.getArea() << endl;
+    cout << textBox.getValue();
 
     return 0;
 }
