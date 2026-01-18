@@ -8,6 +8,13 @@
 using namespace std;
 
 
+Rectangle::Rectangle(const Rectangle& source) {
+    cout << "Rectangle copied" << endl;
+    this->width = source.width;
+    this->height = source.height;
+    this->color = source.color;
+}
+
 Rectangle::Rectangle(int width, int height) {
     cout << "Constructing a Rectangle" << endl;
     setWidth(width);
