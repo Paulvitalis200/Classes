@@ -8,6 +8,7 @@
 
 class Rectangle {
 public:
+    Rectangle() = default;
     Rectangle(int width, int height);
     void draw();
     int getArea();
