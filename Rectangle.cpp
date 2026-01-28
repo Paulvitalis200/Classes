@@ -7,13 +7,13 @@
 
 using namespace std;
 
-
-Rectangle::Rectangle(const Rectangle& source) {
-    cout << "Rectangle copied" << endl;
-    this->width = source.width;
-    this->height = source.height;
-    this->color = source.color;
-}
+//
+// Rectangle::Rectangle(const Rectangle& source) {
+//     cout << "Rectangle copied" << endl;
+//     this->width = source.width;
+//     this->height = source.height;
+//     this->color = source.color;
+// }
 
 Rectangle::Rectangle(int width, int height) {
     cout << "Constructing a Rectangle" << endl;
@@ -24,6 +24,10 @@ Rectangle::Rectangle(int width, int height) {
 Rectangle::Rectangle(int width, int height, const string &color) : Rectangle(width, height) {
     cout << "Constructing a Rectangle with color" << endl;
     this->color = color;
+}
+
+Rectangle::~Rectangle() {
+    cout << "Destructor called" << endl;
 }
 
 
