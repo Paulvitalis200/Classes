@@ -22,10 +22,14 @@ public:
     void setWidth(int width);
     int getHeight() const;
     void setHeight(int height);
+
+    static int getObjectsCount();
 private:
     int width;
     int height;
     string color;
+
+    static int objectsCount;
 };
 
 

@@ -16,6 +16,7 @@ using namespace std;
 // }
 
 Rectangle::Rectangle(int width, int height) {
+    objectsCount++;
     cout << "Constructing a Rectangle" << endl;
     setWidth(width);
     setHeight(height);
@@ -59,3 +60,9 @@ void Rectangle::setHeight(int height) {
         throw invalid_argument("height");
     this->height = height;
 }
+
+int Rectangle::getObjectsCount() {
+    return objectsCount;
+}
+
+int Rectangle::objectsCount = 0;
