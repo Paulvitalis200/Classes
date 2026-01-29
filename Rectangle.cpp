@@ -32,16 +32,16 @@ Rectangle::~Rectangle() {
 }
 
 
-void Rectangle::draw() {
+void Rectangle::draw() const {
     cout << "Drawing a rectangle" << endl;
     cout << "Dimensions: " << width << ", " << height << endl;
 }
 
-int Rectangle::getArea() {
+int Rectangle::getArea() const {
     return width * height;
 }
 
-int Rectangle::getWidth() {
+int Rectangle::getWidth() const {
     return width;
 }
 

@@ -15,13 +15,12 @@ void showPerson(Person person) {
 }
 
 int main() {
-    Rectangle rectangle{10, 20, "blue"}; // Instance member
-    Rectangle second{20,32};
+    const Rectangle rectangle;
 
-    // Members that belong to the Rectangle class itself. Single copy will be shared
-    // by all instances
+    rectangle.getHeight();
 
-    cout << Rectangle::getObjectsCount() << endl;
+    // Methods that don't change state of an object should be declared as constant keyword
 
+ // All attributes will be constant
     return 0;
 }
