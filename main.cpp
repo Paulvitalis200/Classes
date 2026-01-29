@@ -11,10 +11,25 @@ using namespace std;
 
 
 int main() {
-    auto rectangle = make_unique<Rectangle>(10, 20);
-    rectangle->draw();
+    // Rectangle rectangles[3]; // Will only work if we have a default constructor
+    //
+    // // This doesn't need to have a default construoctor
+    // Rectangle rectangles2[] = {
+    //     Rectangle(),
+    //     Rectangle(10, 20),
+    //     Rectangle(10, 20, "blue")
+    // };
 
-    SmartPointer ptr{new int};
+    // Better way. Compiler knows
+    Rectangle rectangles3[] = {
+        {},
+        {10, 20},
+        {10, 20, "blue"}
+    };
+
+    // We use Rectangle& as a reference for optimization
+    for (Rectangle& rect:rectangles3)
+        rect.draw();
 
 
     return 0;
