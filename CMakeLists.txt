@@ -9,4 +9,6 @@ add_executable(Classes main.cpp
         TextBox.cpp
         TextBox.h
         Person.cpp
-        Person.h)
+        Person.h
+        SmartPointer.cpp
+        SmartPointer.h)
