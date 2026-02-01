@@ -1,9 +1,6 @@
 #include <iostream>
-#include "Rectangle.h"
-#include "TextBox.h"
 #include "Person.h"
 #include "memory"
-#include "SmartPointer.h"
 #include "Length.h"
 #include "Point.h"
 // The reason we have two files, header and cpp is to reduce compile times,
