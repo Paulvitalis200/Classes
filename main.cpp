@@ -13,13 +13,9 @@ using namespace std;
 
 int main() {
     Length first{10};
-    Length second{10};
+    Length second{20};
 
-
-    // We want to compare two length objects. This is where operator overloading comes
-    // to the rescue. We can implement equality operator to allow two length objects
-    // to be compared for equality.
-
-
+    if (first < second)
+        cout << "First is smaller";
     return 0;
 }
