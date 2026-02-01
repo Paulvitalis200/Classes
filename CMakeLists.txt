@@ -11,4 +11,6 @@ add_executable(Classes main.cpp
         Person.cpp
         Person.h
         SmartPointer.cpp
-        SmartPointer.h)
+        SmartPointer.h
+        Length.cpp
+        Length.h)
