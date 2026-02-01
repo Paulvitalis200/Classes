@@ -14,13 +14,6 @@ using namespace std;
 int main() {
     Length first{10};
     Length second{10};
-    Point referencePoints{10, 20};
-    Point closePoint{10, 20};
-
-    if (referencePoints == closePoint)
-        cout << "What's my motherfucking name!" << endl;
-    else
-        cout << "Nope!";
 
 
     // We want to compare two length objects. This is where operator overloading comes
