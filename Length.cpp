@@ -21,3 +21,9 @@ bool Length::operator!=(int other) const {
     return !(value == other); // Write it in terms of the equality operator
 }
 
+// Define a class Called Point with two attributes.
+// -x: int
+// -y: int
+
+// Overload the equality operator for comparing two point objects
+// +operator==(other:Point)

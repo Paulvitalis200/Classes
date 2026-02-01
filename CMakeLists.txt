@@ -13,4 +13,6 @@ add_executable(Classes main.cpp
         SmartPointer.cpp
         SmartPointer.h
         Length.cpp
-        Length.h)
+        Length.h
+        Point.cpp
+        Point.h)
