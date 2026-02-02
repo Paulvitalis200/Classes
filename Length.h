@@ -8,6 +8,7 @@
 
 #include <compare>
 #include <ostream>
+#include <istream>
 
 using namespace std;
 
@@ -27,6 +28,9 @@ private:
 
 // Here
 ostream& operator<<(ostream& stream, const Length& length);
+
+// Overloading Stream extraction operator
+istream& operator>>(istream& stream, Length& length);
 
 
 #endif //CLASSES_LENGTH_H

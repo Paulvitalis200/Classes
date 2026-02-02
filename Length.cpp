@@ -32,3 +32,10 @@ ostream& operator<<(ostream &stream, const Length &length) {
     stream << length.get_value();
     return stream; // Reason for returning the stream object is to allow chaining of the insertion operator many times e.g cout << 1 << 2 << 3
 }
+
+istream & operator>>(istream &stream, Length &length) {
+    int value;
+    stream >> value;
+    length.set_value(value);
+    return stream;
+}
