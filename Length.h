@@ -15,11 +15,12 @@ using namespace std;
 class Length {
 public:
     explicit Length(int value);
-    // Equality operator
-    // We use a reference parameter for optimization
+
     bool operator==(const Length& other) const;
     bool operator==(int other) const;
     strong_ordering operator<=>(const Length& other) const;
+    Length operator+(const Length& other) const; // overloading arithmetic
+
     int get_value() const;
     void set_value(const int value);
 private:

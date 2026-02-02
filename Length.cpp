@@ -20,6 +20,10 @@ std::strong_ordering Length::operator<=>(const Length &other) const {
     return value <=> other.value;
 }
 
+Length Length::operator+(const Length &other) const {
+    return Length(value + other.value);
+}
+
 int Length::get_value() const {
     return value;
 }
