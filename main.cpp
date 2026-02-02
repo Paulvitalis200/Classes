@@ -9,7 +9,8 @@ using namespace std;
 int main() {
     Length length{10};
     Length second{20};
+    Point point{22, 12};
 
-    cout << 1 << 2 << 3;
+    cout << point;
     return 0;
 }
