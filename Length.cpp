@@ -30,6 +30,7 @@ void Length::set_value(const int value) {
 
 ostream& operator<<(ostream &stream, const Length &length) {
     stream << length.get_value();
+    length.x; // We can now access any private variable e.g int x because of the friend
     return stream; // Reason for returning the stream object is to allow chaining of the insertion operator many times e.g cout << 1 << 2 << 3
 }
 

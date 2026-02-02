@@ -24,6 +24,8 @@ public:
     void set_value(const int value);
 private:
     int value;
+    int x;
+    friend ostream& operator<<(ostream& stream, const Length& length);
 };
 
 // Here
