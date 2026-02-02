@@ -7,10 +7,9 @@ using namespace std;
 
 
 int main() {
-    Length first{10};
+    Length length{10};
     Length second{20};
 
-    if (first < second)
-        cout << "First is smaller";
+    cout << 1 << 2 << 3;
     return 0;
 }

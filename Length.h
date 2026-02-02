@@ -7,6 +7,9 @@
 #define CLASSES_LENGTH_H
 
 #include <compare>
+#include <ostream>
+
+using namespace std;
 
 class Length {
 public:
@@ -15,10 +18,15 @@ public:
     // We use a reference parameter for optimization
     bool operator==(const Length& other) const;
     bool operator==(int other) const;
-    std::strong_ordering operator<=>(const Length& other) const;
+    strong_ordering operator<=>(const Length& other) const;
+    int get_value() const;
+    void set_value(const int value);
 private:
     int value;
 };
+
+// Here
+ostream& operator<<(ostream& stream, const Length& length);
 
 
 #endif //CLASSES_LENGTH_H
