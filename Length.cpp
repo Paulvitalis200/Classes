@@ -31,11 +31,22 @@ Length& Length::operator+=(const Length &other) {
     return *this;
 }
 
-Length& Length::operator=(const Length &other) {
-    cout << "Object Assigned to another";
-    value = other.value;
-    return *this; // dereferenc pointer and return it
+Length& Length::operator++() {
+    value++; // increment value of current object
+    return *this; // return value of current object
 }
+
+Length Length::operator++(int) {
+    Length copy = *this; // Take a copy of the object
+    operator++();
+    return copy;
+}
+
+// Length& Length::operator=(const Length &other) {
+//     cout << "Object Assigned to another";
+//     value = other.value;
+//     return *this; // dereferenc pointer and return it
+// }
 
 int Length::get_value() const {
     return value;

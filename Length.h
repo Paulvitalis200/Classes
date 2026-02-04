@@ -16,13 +16,13 @@ class Length {
 public:
     explicit Length(int value);
     Length() = default;
-
     bool operator==(const Length& other) const;
     bool operator==(int other) const;
     strong_ordering operator<=>(const Length& other) const;
     Length operator+(const Length& other) const; // overloading arithmetic
     Length& operator+=(const Length& other); // lesson implementation
-    Length& operator=(const Length& other);
+    Length& operator++(); // prefix
+    Length operator++(int); // postfix. Return type should be Length. We are returning a copy because we are not modifying an existing object.
     int get_value() const;
     void set_value(const int value);
 private:
