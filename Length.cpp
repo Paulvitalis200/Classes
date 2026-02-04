@@ -1,8 +1,10 @@
 //
 // Created by Admin on 01/02/2026.
 //
-
+#include <iostream>
 #include "Length.h"
+
+using namespace std;
 
 Length::Length(int value) : value(value) {
 
@@ -27,6 +29,12 @@ Length Length::operator+(const Length &other) const {
 Length& Length::operator+=(const Length &other) {
     value += other.value;
     return *this;
+}
+
+Length& Length::operator=(const Length &other) {
+    cout << "Object Assigned to another";
+    value = other.value;
+    return *this; // dereferenc pointer and return it
 }
 
 int Length::get_value() const {
