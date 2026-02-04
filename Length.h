@@ -20,8 +20,8 @@ public:
     bool operator==(int other) const;
     strong_ordering operator<=>(const Length& other) const;
     Length operator+(const Length& other) const; // overloading arithmetic
-    Length& operator+=(const Length& other); // lesson implementation
-
+    Length& operator+=(const Length& other); // lesson implementation The return type is Length& since we are adding to an existing length object
+    // The parameter should also be a length object
     int get_value() const;
     void set_value(const int value);
 private:
