@@ -20,6 +20,7 @@ public:
     bool operator==(int other) const;
     strong_ordering operator<=>(const Length& other) const;
     Length operator+(const Length& other) const; // overloading arithmetic
+    Length& operator+=(const Length& other); // lesson implementation
 
     int get_value() const;
     void set_value(const int value);

@@ -11,6 +11,9 @@ int main() {
     Length second{20};
     Length third = length + second;
 
+    // Wes houls also be able to do
+    length += second; // implementation
+
     cout << third;
     return 0;
 }
