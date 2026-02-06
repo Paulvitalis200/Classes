@@ -52,7 +52,10 @@ Length::operator int() const {
 //     return *this; // dereferenc pointer and return it
 // }
 
-int Length::get_value() const {
+// Use it with only simple functions like this one which has one line
+// Most modern compilers will decide when they should inline or not.
+// Stay away from this unless you know what you're doing
+inline int Length::get_value() const {
     return value;
 }
 

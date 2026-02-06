@@ -9,8 +9,6 @@ using namespace std;
 
 int main() {
     Length length{10};
-    int x = length; // Compiler now implicitly converts the length object to an integer
-
-    cout << x;
+    length.get_value();
     return 0;
 }
