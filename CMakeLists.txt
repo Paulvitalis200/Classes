@@ -7,4 +7,6 @@ add_executable(Classes main.cpp
         Length.cpp
         Length.h
         Point.cpp
-        Point.h)
+        Point.h
+        Array.cpp
+        Array.h)
