@@ -8,10 +8,9 @@ using namespace std;
 
 
 int main() {
-    Array array{10};
-    array[0] = 1;
+    Length length{10};
+    int x = length; // Compiler now implicitly converts the length object to an integer
 
-    cout << array[20];
-    // array[index]
+    cout << x;
     return 0;
 }

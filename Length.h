@@ -23,6 +23,7 @@ public:
     Length& operator+=(const Length& other); // lesson implementation
     Length& operator++(); // prefix
     Length operator++(int); // postfix. Return type should be Length. We are returning a copy because we are not modifying an existing object.
+    operator int() const; // Overload type conversion
     int get_value() const;
     void set_value(const int value);
 private:
