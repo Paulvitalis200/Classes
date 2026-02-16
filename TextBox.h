@@ -13,8 +13,6 @@ using namespace std;
 
 class TextBox : public Widget {
 public:
-    using Widget::Widget;
-    explicit TextBox(bool enabled, const string& value);
     string getValue();
     void setValue(const string& value);
 private:

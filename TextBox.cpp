@@ -7,6 +7,3 @@
 
 using namespace std;
 
-
-TextBox::TextBox(bool enabled, const string &value): Widget(enabled), value{value} {
-}
