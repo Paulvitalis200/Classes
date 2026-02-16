@@ -9,4 +9,12 @@ add_executable(Classes main.cpp
         Point.cpp
         Point.h
         Array.cpp
-        Array.h)
+        Array.h
+        Widget.cpp
+        Widget.h
+        TextBox.cpp
+        TextBox.h
+        Shape.cpp
+        Shape.h
+        Rectangle.cpp
+        Rectangle.h)

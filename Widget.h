@@ -1,0 +1,19 @@
+//
+// Created by Admin on 16/02/2026.
+//
+
+#ifndef CLASSES_WIDGET_H
+#define CLASSES_WIDGET_H
+
+
+class Widget {
+public:
+    void enable();
+    void disable();
+    bool isEnabled() const;
+private:
+    bool enabled;
+};
+
+
+#endif //CLASSES_WIDGET_H
