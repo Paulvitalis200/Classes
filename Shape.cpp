@@ -8,6 +8,6 @@ string Shape::getBackground() {
     return background;
 }
 
-void Shape::setBackground(string background) {
+void Shape::setBackground(const string& background) {
     this->background = background;
 }

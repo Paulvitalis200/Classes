@@ -11,7 +11,7 @@ using namespace std;
 class Shape {
 public:
     string getBackground();
-    void setBackground(string background);
+    void setBackground(const string& background);
 private:
     string background = "Default";
 };
