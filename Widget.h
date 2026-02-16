@@ -8,6 +8,7 @@
 
 class Widget {
 public:
+    Widget(bool enabled);
     void enable();
     void disable();
     bool isEnabled() const;

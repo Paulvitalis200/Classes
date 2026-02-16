@@ -11,14 +11,6 @@ using namespace std;
 
 int main() {
     TextBox box;
-    Rectangle tangle;
-    Widget widget;
-    // tangle.getBackground();
-    box.disable();
-    widget.
-
-    cout << box.isEnabled() << endl;
-    cout << tangle.getBackground();
 
     return 0;
 }
