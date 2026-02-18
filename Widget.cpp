@@ -8,10 +8,6 @@
 
 using namespace std;
 
-void Widget::draw() const {
-    cout << "Drawing a Widget" << endl;
-}
-
 void Widget::enable() {
     enabled = true;
 }

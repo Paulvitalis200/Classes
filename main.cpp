@@ -25,5 +25,6 @@ int main() {
     for (const auto& widget: widgets) {
         widget->draw();
     }
+
     return 0;
 }
