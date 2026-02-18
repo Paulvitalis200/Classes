@@ -1,5 +1,6 @@
 #include <iostream>
-#include "memory"
+#include <vector>
+#include <memory>
 #include "Length.h"
 #include "Point.h"
 #include "Array.h"
@@ -16,11 +17,13 @@ void showWidget(Widget& widget) {
 }
 
 int main() {
-    TextBox box;
-    showWidget(box);
+    vector<unique_ptr<Widget>> widgets;
 
-    CheckBox checkBox;
-    showWidget(checkBox);
+    widgets.push_back(make_unique<TextBox>());
+    widgets.push_back(make_unique<CheckBox>());
 
+    for (const auto& widget: widgets) {
+        widget->draw();
+    }
     return 0;
 }
