@@ -14,7 +14,7 @@ using namespace std;
 class TextBox : public Widget {
 public:
     // Overriding - Redefine a function with the same signature
-    void draw() const override;
+    void draw() const override final; // final is the final implementation
     string getValue();
     void setValue(const string& value);
 private:
