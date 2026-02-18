@@ -7,3 +7,6 @@
 
 using namespace std;
 
+void TextBox::draw() const {
+    cout << "Drawing a TextBox" << endl;
+}
