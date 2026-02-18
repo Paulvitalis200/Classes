@@ -17,4 +17,6 @@ add_executable(Classes main.cpp
         Shape.cpp
         Shape.h
         Rectangle.cpp
-        Rectangle.h)
+        Rectangle.h
+        CheckBox.cpp
+        CheckBox.h)

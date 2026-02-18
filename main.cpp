@@ -6,6 +6,7 @@
 #include "TextBox.h"
 #include "Rectangle.h"
 #include "Widget.h"
+#include "CheckBox.h"
 using namespace std;
 
 void showWidget(Widget& widget) {
@@ -16,8 +17,10 @@ void showWidget(Widget& widget) {
 
 int main() {
     TextBox box;
-    // box.draw();
     showWidget(box);
+
+    CheckBox checkBox;
+    showWidget(checkBox);
 
     return 0;
 }
