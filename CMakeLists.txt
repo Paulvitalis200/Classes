@@ -27,4 +27,6 @@ add_executable(Classes main.cpp
         FileIO.cpp
         FileIO.h
         AccountLocked.cpp
-        AccountLocked.h)
+        AccountLocked.h
+        Pair.cpp
+        Pair.h)
