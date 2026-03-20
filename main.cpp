@@ -1,21 +1,17 @@
 #include <iostream>
 #include "FileIO.h"
 #include "Rectangle.h"
+#include "AccountLocked.h"
 
 using namespace std;
 
-void createRectangle() {
-    Rectangle rect;
-    rect.setWidth(-1);
+void login() {
+    throw AccountLocked{};
 }
-
-void doWork() {
-    createRectangle();
-}
-
 int main() {
+    // Account Locked
     try {
-        doWork();
+        login();
     }
     catch (const exception& ex) {
         cout << ex.what();
