@@ -17,9 +17,16 @@ int main() {
 
         cout << "Done";
     }
-    catch (const invalid_argument& ex) {
+    // logic error
+    // Parent parent = child
+    // draw(Widget widget)
+    catch (const out_of_range& ex) {
         cout << ex.what();
     }
+    catch (const logic_error& ex) {
+        cout << ex.what();
+    }
+
 
     cout << "End of program";
 
