@@ -4,33 +4,22 @@
 
 using namespace std;
 
+void createRectangle() {
+    Rectangle rect;
+    rect.setWidth(-1);
+}
+
+void doWork() {
+    createRectangle();
+}
 
 int main() {
     try {
-        cout << "Width: ";
-        int width;
-        cin >> width;
-
-        Rectangle rect;
-
-        rect.setWidth(width);
-
-        cout << "Done";
+        doWork();
     }
-    // logic error
-    // Parent parent = child
-    // draw(Widget widget)
-    catch (const out_of_range& ex) {
+    catch (const exception& ex) {
         cout << ex.what();
     }
-    catch (const logic_error& ex) {
-        cout << ex.what();
-    }
-
-
-    cout << "End of program";
 
     return 0;
-
-
 }
