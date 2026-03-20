@@ -19,4 +19,10 @@ add_executable(Classes main.cpp
         Rectangle.cpp
         Rectangle.h
         CheckBox.cpp
-        CheckBox.h)
+        CheckBox.h
+        FileReader.cpp
+        FileReader.h
+        FileWriter.cpp
+        FileWriter.h
+        FileIO.cpp
+        FileIO.h)
